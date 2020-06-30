@@ -8,11 +8,9 @@ public class Progression {
     int quantityOfTerms = Integer.parseInt(args[3]);
     double commonRatio = 0.0;
     switch (typeOfProgression) {
-      case "a" -> {
-        commonRatio = secondTerm - firstTerm;
-        break;
-      }
+      case "a" -> commonRatio = secondTerm - firstTerm;
       case "g" -> commonRatio = secondTerm / firstTerm;
+      default -> throw new IllegalStateException("Unexpected value: " + typeOfProgression);
     }
     double nextTerm = firstTerm;
     for (int i = 0; i < quantityOfTerms; i++) {

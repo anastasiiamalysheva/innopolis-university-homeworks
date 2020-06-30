@@ -1,8 +1,6 @@
 package ru.malysheva.task6c.coffeeshop1;
 
-public class Milk1 {
-
-
+public abstract class Milk1 {
     protected int PricePerLiter;
 
     Milk1(int PricePerLiter) {
@@ -13,4 +11,3 @@ public class Milk1 {
         return this.PricePerLiter;
     }
 }
-
