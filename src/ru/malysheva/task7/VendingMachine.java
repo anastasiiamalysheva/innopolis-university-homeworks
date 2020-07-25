@@ -6,6 +6,7 @@ public class VendingMachine {
     public static void main(String[] args) {
         for (Drinks d : Drinks.values()) {
             System.out.println(d);
+            System.out.println();
         }
 
         Scanner in = new Scanner(System.in);
@@ -15,8 +16,8 @@ public class VendingMachine {
         System.out.println("Insert money: ");
         int money = in.nextInt();
 
-
         if (choice == 1) {
+
             System.out.println("Your balance now: " + (money - 100));
 
         } else if (choice == 2) {
@@ -32,12 +33,12 @@ public class VendingMachine {
         int b = money - 50;
         int c = money - 75;
 
-        if (a > 0) {
-            System.out.println("Would you like to buy something else?");
-        } else if (b > 0) {
-            System.out.println("Would you like to buy something else?");
-        } else if (c > 0) {
-            System.out.println("Would you like to buy something else?");
+        if (a > 0 | b > 0 | c > 0) {
+            System.out.println("Your drink is served. Would you like to buy something else? ");
+        } else {
+            System.out.println("Thank you! Goodbye! ");
         }
     }
+
+
 }

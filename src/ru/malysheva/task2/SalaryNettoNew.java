@@ -2,7 +2,7 @@ package ru.malysheva.task2;
 
 import java.util.Scanner;
 
-public class salaryNettoNew {
+public class SalaryNettoNew {
     public static void main(String[] args) {
         System.out.println("Укажите размер вашей заработной платы до вычета налогов: ");
         try (Scanner in = new Scanner(System.in)) {

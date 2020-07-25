@@ -2,15 +2,14 @@ package ru.malysheva.task3;
 
 import java.util.Scanner;
 
-public class numberDescription {
+public class NumberDescription {
     public static void main(String[] args) {
-        Scanner in = new Scanner (System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Ваше число для описания: ");
         int numberfordescription = in.nextInt();
 
 
-
-        if  (numberfordescription > 0) {
+        if (numberfordescription > 0) {
             System.out.print("Число положительное и ");
 
         }else if (numberfordescription < 0) {

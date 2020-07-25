@@ -2,7 +2,7 @@ package ru.malysheva.task2;
 
 import java.util.Scanner;
 
-public class priceCalculationNew {
+public class PriceCalculationNew {
     public static void main(String[] args) {
         double tariff = 43;
 
@@ -12,7 +12,7 @@ public class priceCalculationNew {
             double order = in.nextDouble();
             double finalCost = tariff * order;
             System.out.format("Сумма к оплате: %.3f", finalCost);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Exception caught");
         }
 
