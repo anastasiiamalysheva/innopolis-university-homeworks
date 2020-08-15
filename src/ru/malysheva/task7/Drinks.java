@@ -12,6 +12,7 @@ public enum Drinks {
     private Drinks(String name, int cost) {
         this.name = name;
         this.price = cost;
+
     }
 
     public String getName() {
@@ -21,6 +22,7 @@ public enum Drinks {
     public int getPrice() {
         return price;
     }
+
 
 }
 
