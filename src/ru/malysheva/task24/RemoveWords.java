@@ -1,12 +1,13 @@
 package ru.malysheva.task24;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class RemoveWords {
 
     public static void main(String[] args) {
 
-        HashSet<String> myHashSet = new HashSet<>();
+        Set<String> myHashSet = new HashSet<>();
 
         myHashSet.add("Anjela");
         myHashSet.add("Olivera");

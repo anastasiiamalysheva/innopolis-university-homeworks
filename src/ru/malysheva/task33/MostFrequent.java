@@ -1,31 +1,26 @@
 package ru.malysheva.task33;
 
-
 import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class MostFrequent {
-
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите слово: ");
+        String s = sc.nextLine();
 
-        String s = "anastasia";
-
-        String[] letters = s.split("");
-
-        HashMap<String, Integer> keyValue = new HashMap<>();
-
-        for (int i = 0; i <= letters.length - 1; i++) {
-
-            if (keyValue.containsKey(letters[i])) {
-
-                int counter = keyValue.get(letters[i]);
-
-                keyValue.put(letters[i], counter + 1);
-
-            } else {
-                keyValue.put(letters[i], 1);
-            }
+        char[] letters = s.toCharArray();
+        Map<Character, Integer> keyValue = new HashMap<>();
+        for (char letter : letters) {
+            keyValue.merge(letter, 1, Integer::sum);
         }
         System.out.println(keyValue);
+        int max = Integer.MIN_VALUE;
+        for (Integer value : keyValue.values()) {
+            max = Integer.max(max, value);
+        }
+        System.out.println(max);
     }
 }
 
